@@ -1,7 +1,5 @@
 import cv2
 
-from frame_extractor import extract_frame
-from image_reader import ImageReader
 
 
 class ClothesColorPresenter:
@@ -46,11 +44,3 @@ class ClothesColorPresenter:
                           1, 1)
             one_box_st_x = one_box_ed_x
         return image_draw
-
-
-if __name__ == "__main__":
-    presenter = ClothesColorPresenter(10, (0, 0, 0), (255, 255, 255), (255, 255, 255), 15, 15, 5)
-    frame_s = extract_frame("videos\\good.mp4")
-    new_frame = presenter.insert(frame_s[0], [(255, 0, 0), (0, 255, 0), (0, 0, 255)], (10, 10, 10, 10))
-    cv2.imshow("frame 0", new_frame)
-    cv2.waitKey()

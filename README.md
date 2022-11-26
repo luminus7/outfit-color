@@ -4,17 +4,17 @@ Outfit color analyzer using OpenCV technology.
 
 ## Pedestrian detection
 ### Input  
-<img src = "images/people_walking.jpg" height = "300">
+<img src = "readme_images/input/2-people_walking.jpg" height = "300">
 
 ### Output  
-<img src = "images/output.jpg" height = "300"> 
+<img src = "readme_images/output/pd-2-people_walking.jpg" height = "300"> 
 
 ## Clothes color detection
 ### Input
-<img src = "images/person_wearing_clothes.jpg" height = "300"> 
+<img src = "readme_images/input/1-person-wearing_colorful_clothes.jpg" height = "300"> 
 
 ### Output
-<img src = "images/clothes_color.jpeg" height = "300"> 
+<img src = "readme_images/output/cd-1-person-wearing_colorful_clothes.jpeg" height = "300"> 
 
 > - image source: https://www.gq.com/story/why-normal-ass-clothes-are-the-best-way-to-dress-right-now
 > 
