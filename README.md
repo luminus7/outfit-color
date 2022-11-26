@@ -50,6 +50,7 @@ python main.py ..\\videos\\{video_name}
 
 #### Output
 <img src = "readme_images/output/cd-1-person-wearing_colorful_clothes.jpeg" height = "300"> 
+
 > - video source: https://www.youtube.com/watch?v=tB-0oWBuK7A
 > 
 > - image source: https://www.gq.com/story/why-normal-ass-clothes-are-the-best-way-to-dress-right-now
