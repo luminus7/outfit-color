@@ -7,7 +7,7 @@ Outfit color analyzer using OpenCV technology.
 ### Color of clothes
 <img src = "readme_images/output/cdpd-zoom-1-person-walking_and_dancing.jpg" height = "300">
 
-# Using 
+# Key features we have focused on
 ## - Pedestrian detection
 ### Input  
 <img src = "readme_images/input/2-people-walking.jpg" height = "300">
