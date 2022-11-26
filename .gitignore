@@ -162,6 +162,7 @@ cython_debug/
 
 
 ### VsCode ignore ###
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -210,3 +211,6 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+
+### Project dependant ignore ###
+videos/*
