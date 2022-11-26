@@ -23,6 +23,11 @@ git clone git@github.com:JoeSeongchan/outfit-color.git && cd outfit-color
 ```
 - Setup python environment
 ```
+python -m venv venv
+cd .\\venv\\Scripts
+.\activate
+cd ..
+cd ..
 pip install -r requirements.txt
 ```
 ---
