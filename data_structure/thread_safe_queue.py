@@ -11,7 +11,9 @@ class ThreadSafeQueue:
 
     def push(self, data):
         self.__queue.put(data)
-
+    
+    def size(self):
+        return self.__queue.qsize()
 
 # Test code
 if __name__ == "__main__":
