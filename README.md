@@ -15,7 +15,7 @@ Outfit color analyzer using OpenCV technology.
 
 ---
 ## Environment setup
-This code has been tested on Ubuntu 16.04, Python 3.6, Pytorch 0.4.1, CUDA 9.2, RTX 2080 GPUs
+This code has been tested on Windows 11, Python 3.10, Pycharm 2022.2.4 (Community)
 
 - Clone the repository 
 ```
@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 ```shell
 cd src
-python main.py ..\\videos\\{video_name}
+python main.py "..\\videos\\{video_name}"
 ```
 
 ## Key features we have focused on
