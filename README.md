@@ -15,7 +15,7 @@ Outfit color analyzer using OpenCV technology.
 
 ---
 ## Environment setup
-This code has been tested on Windows 11, Python 3.10, Pycharm 2022.2.4 (Community)
+This code has been tested on Windows 11, Python 3.10, Pycharm 2022.2.4 (Community), Vscode 1.73.0
 
 - Clone the repository 
 ```
@@ -30,6 +30,23 @@ cd ..
 cd ..
 pip install -r requirements.txt
 ```
+
+If you want to run the code in windows + VsCode environment use the comment-out-ed codes in the 'main.py'
+```
+""" If you are using Windows + Vscode, enable comments in below ..."""
+# if (len(sys.argv)-1) != 1:
+#     print("Please feed the file path you want to run")
+# video_path = sys.argv[1]
+# print(video_path)
+"""                        Windows + Vscode                        """
+```
+and add...
+```
+"args": ["\\\\videos\\\\1-person_walking.mp4"],
+```
+to the 'launch.json' file.
+which can be easily made by 'Run and Debug' sidebar (ctrl+shift+D)
+
 ---
 ## Demo
 - [Setup](#environment-setup) your environment
