@@ -2,7 +2,6 @@ import cv2
 
 
 # Get Video file's route
-<<<<<<< HEAD
 class FrameExtractor:
     def __init__(self, video_path):
         self.__video_path = video_path  # input frame
@@ -14,16 +13,15 @@ class FrameExtractor:
         frame_s = []
         frame_count = 0
 
-    while video.isOpened():
-        is_video_not_finished, frame = video.read()
-        frame_count += 1
-        if not is_video_not_finished:
-            break
-        if frame_count % (int(fps * 3)) == 0:
-            frame_s.append(frame)
-        # frame_s.append(frame)
-    return frame_s
->>>>>>> upstream/dev
+        while video.isOpened():
+            is_video_not_finished, frame = video.read()
+            frame_count += 1
+            if not is_video_not_finished:
+                break
+            if frame_count % (int(fps * 3)) == 0:
+                frame_s.append(frame)
+            # frame_s.append(frame)
+        return frame_s
 
 
 # Show frame #0 => Test is done successfully
