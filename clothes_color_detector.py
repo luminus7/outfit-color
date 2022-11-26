@@ -11,9 +11,13 @@ class ClothesColorDetector:
         pass
 
     @staticmethod
-    def detect_clothes_color(image):
-        height, width, dim = image.shape
-        img = image[int(height / 4):int(3 * height / 4), int(width / 4):int(3 * width / 4), :]
+    def detect_clothes_color(frame,region):
+        x,y,w,h=region
+        region_image = frame[y:y + h, x:x + w]
+        #cv2.imshow("",region_image)
+        #cv2.waitKey()
+        height, width, dim = region_image.shape
+        img = region_image[int(height / 4):int(3 * height / 4), int(width / 4):int(3 * width / 4), :]
         height, width, dim = img.shape
 
         img_vec = np.reshape(img, [height * width, dim])
@@ -26,8 +30,8 @@ class ClothesColorDetector:
 
         color_s = []
         for cluster_center in kmeans.cluster_centers_[sort_ix]:
-            color_s.append((int(cluster_center[2]), int(cluster_center[1]), int(cluster_center[0])))
-        ClothesColorDetector.show_colors_through_graph(color_s)
+            color_s.append((int(cluster_center[0]), int(cluster_center[1]), int(cluster_center[2])))
+        # ClothesColorDetector.show_colors_through_graph(color_s)
         return color_s
 
     @staticmethod

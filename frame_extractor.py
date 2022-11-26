@@ -5,7 +5,7 @@ import cv2
 def extract_frame(video_path):
     # Get Video file
     video = cv2.VideoCapture(video_path)
-    # fps = video.get(cv2.CAP_PROP_FPS)
+    fps = video.get(cv2.CAP_PROP_FPS)
     frame_s = []
     frame_count = 0
 
@@ -14,7 +14,9 @@ def extract_frame(video_path):
         frame_count += 1
         if not is_video_not_finished:
             break
-        frame_s.append(frame)
+        if frame_count % (int(fps * 3)) == 0:
+            frame_s.append(frame)
+        # frame_s.append(frame)
     return frame_s
 
 
