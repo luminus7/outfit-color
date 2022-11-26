@@ -3,6 +3,7 @@ Image processing Team Project 02
 Outfit color analyzer using OpenCV technology.  
 
 <img src = "readme_images/output/cdpd-1-person-walking_and_dancing.jpg" height = "300">
+<img src = "readme_images/output/cdpd-2-women-walking.png" height = "300">
 
 ### Color of clothes
 <img src = "readme_images/output/cdpd-zoom-1-person-walking_and_dancing.jpg" height = "300">
