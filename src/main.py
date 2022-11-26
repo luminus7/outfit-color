@@ -1,4 +1,4 @@
-
+import sys
 import cv2
 
 from feature.clothes_color_detector import ClothesColorDetector
@@ -7,6 +7,17 @@ from feature.frame_extractor import extract_frame
 from feature.pedestrian_detector import PedestrianDetector
 
 if __name__ == "__main__":
+    """ If you are using Windows + Vscode, enable comments in below ..."""
+    # if (len(sys.argv)-1) != 1:
+    #     print("Please feed the file path you want to run")
+    # video_path = sys.argv[1]
+    # print(video_path)
+    """                        Windows + Vscode                        """
+    """ and add...
+                "args": ["\\\\videos\\\\1-person_walking.mp4"],
+        to the 'launch.json' file.
+        you can make the file easily by 'Run and Debug' sidebar (ctrl+shift+D)
+    """
 
     video_path = "videos\\1-person_walking.mp4"
     frame_s = extract_frame(video_path)
