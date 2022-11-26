@@ -4,10 +4,10 @@ Outfit color analyzer using OpenCV technology.
 
 ## Pedestrian detection
 ### Input  
-<img src = "readme_images/input/2-people_walking.jpg" height = "300">
+<img src = "readme_images/input/2-people-walking.jpg" height = "300">
 
 ### Output  
-<img src = "readme_images/output/pd-2-people_walking.jpg" height = "300"> 
+<img src = "readme_images/output/pd-2-people-walking.jpg" height = "300"> 
 
 ## Clothes color detection
 ### Input
