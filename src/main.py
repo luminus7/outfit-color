@@ -1,14 +1,14 @@
-
 import cv2
 
 from feature.clothes_color_detector import ClothesColorDetector
 from feature.clothes_color_presenter import ClothesColorPresenter
 from feature.frame_extractor import extract_frame
 from feature.pedestrian_detector import PedestrianDetector
+import sys
 
 if __name__ == "__main__":
-
-    video_path = "videos\\1-person_walking.mp4"
+    # video_path = "videos\\1-person_walking.mp4"
+    video_path = sys.argv[1]
     frame_s = extract_frame(video_path)
     delay = int(1000 / cv2.CAP_PROP_FPS)
     for frame in frame_s:
