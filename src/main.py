@@ -5,6 +5,7 @@ from feature.clothes_color_detector import ClothesColorDetector
 from feature.clothes_color_presenter import ClothesColorPresenter
 from feature.frame_extractor import extract_frame
 from feature.pedestrian_detector import PedestrianDetector
+import sys
 
 if __name__ == "__main__":
     """ If you are using Windows + Vscode, enable comments in below ..."""
@@ -18,8 +19,11 @@ if __name__ == "__main__":
         to the 'launch.json' file.
         you can make the file easily by 'Run and Debug' sidebar (ctrl+shift+D)
     """
-
     video_path = "videos\\1-person_walking.mp4"
+
+    """ If you are using Linux or Python venv, enable comments in below ..."""
+    # video_path = sys.argv[1]
+    """                        Linux or Python venv                        """
     frame_s = extract_frame(video_path)
     delay = int(1000 / cv2.CAP_PROP_FPS)
     for frame in frame_s:
